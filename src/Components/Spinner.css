@@ -1,0 +1,42 @@
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px; /* adjust as needed */
+}
+
+.loading-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fbfffd;
+}
+
+.progress {
+  width: 100.8px;
+  height: 16.8px;
+  background: linear-gradient(#474bff 50%, #0000 0),
+              linear-gradient(#0000 50%, #474bff 0),
+              linear-gradient(#474bff 50%, #0000 0),
+              linear-gradient(#0000 50%, #474bff 0),
+              linear-gradient(#474bff 50%, #0000 0),
+              linear-gradient(#0000 50%, #474bff 0)
+              #dbdcef;
+  background-size: calc(100% / 6 + 1px) 200%;
+  background-repeat: no-repeat;
+  animation: progress-qh65fe 2s infinite;
+}
+
+/* animation keyframes */
+@keyframes progress-qh65fe {
+  0% {
+    background-position: calc(0 * 100% / 5) 100%, calc(1 * 100% / 5) 100%,
+                         calc(2 * 100% / 5) 100%, calc(3 * 100% / 5) 100%,
+                         calc(4 * 100% / 5) 100%, calc(5 * 100% / 5) 100%;
+  }
+  100% {
+    background-position: calc(0 * 100% / 5) 0%, calc(1 * 100% / 5) 0%,
+                         calc(2 * 100% / 5) 0%, calc(3 * 100% / 5) 0%,
+                         calc(4 * 100% / 5) 0%, calc(5 * 100% / 5) 0%;
+  }
+}
