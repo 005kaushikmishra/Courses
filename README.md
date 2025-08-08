@@ -2,6 +2,7 @@
 This project is a responsive and modern course listing interface built using React.js. It showcases a clean layout of educational courses with category-based filtering, engaging visuals, and interactive UI elements like "Live" badges and wishlist buttons.
 
 📸 UI Preview
+![BMI Calculator UI](./path-to-your-image.png)
 
 Displays a grid of categorized courses with attractive cards.
 
